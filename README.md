@@ -12,11 +12,11 @@ To use square code the spaces and punctuation are removed from the English text 
  
 **Describe: `cypher()`**   
 #### Test 1:
-**Test:** *takes input and display output lowercased with no punctuation*   
-**Expect:** *cypher(Hi tHeR,e!).toEqual(hithere)* 
+**Test:** *takes input and display output without non-alphabetical characters*   
+**Expect:** *cypher(Hi tHeR,e5!).toEqual(hithere)* 
 #### Test 2:   
-**Test:** *calculate length of a string and find closest next square root of it*   
-**Expect:** *cypher(Hi there!).toEqual(7, 3)* 
+**Test:** *calculate the round of the closest square root of the length of string*   
+**Expect:** *cypher(Hi there!).toEqual(3)* 
 #### Test 3:   
 **Test:** *shift characters for a number we found*   
 **Expect:** *cypher(Hi there!, i).toEqual(e)*   

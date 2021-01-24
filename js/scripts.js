@@ -1,6 +1,7 @@
 function cypher(input) {
   input = input.replace(/[^a-z]/g, '');
-  return input;
+  let index = Math.round(Math.sqrt(input.length));
+  return index;
 }
 
 $(document).ready(function() {
