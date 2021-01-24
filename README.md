@@ -2,7 +2,7 @@
 #### *Epicodus Practice lesson #32 (Week 3) on 1/23/2021*
 ***By Daniel Adeyemi***
 
-### *This project is not in a complete or portfolio ready state, and should not be considered representational of professional work.*
+### *This project is not in a complete or portfolio ready state, and should not be considered as representation of professional work.*
 ---
 ## *Description:*
 This web page will output the encoded version of a given block of text. This program will use method called *square code*.   
