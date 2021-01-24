@@ -1,7 +1,8 @@
 function cypher(input) {
-  const array = [];
+  let array = [];
+  let array1 = [];
   input = input.replace(/[^a-z]/g, '');
-  let index = Math.round(Math.sqrt(input.length));
+  let index = Math.ceil(Math.sqrt(input.length));
   //array.push(input[0])
   for (let i = 0; i < index; i++) {
     for (j = 0; j < index; j++) {
@@ -9,10 +10,9 @@ function cypher(input) {
       array.push(newChar);
     }
   }
-  /*for (let i = input.length - index; i < input.length; i++) {
-    let newChar = input[]
-  }*/
-  return array.join('');
+  array = array.join('');
+  array = array.replace(/(\w{5})/g, '$1 ').replace(/(^\s+|\s+$)/, '');
+  return array;
 }
 
 $(document).ready(function() {
