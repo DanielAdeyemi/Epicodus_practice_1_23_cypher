@@ -2,10 +2,16 @@ function cypher(input) {
   const array = [];
   input = input.replace(/[^a-z]/g, '');
   let index = Math.round(Math.sqrt(input.length));
-  for (let i = 0; i < input.length - index; i++) {
-    let newChar = input[i + index];
-    array.push(newChar);
+  //array.push(input[0])
+  for (let i = 0; i < index; i++) {
+    for (j = 0; j < index; j++) {
+      let newChar = input[i + j * index];
+      array.push(newChar);
+    }
   }
+  /*for (let i = input.length - index; i < input.length; i++) {
+    let newChar = input[]
+  }*/
   return array.join('');
 }
 
