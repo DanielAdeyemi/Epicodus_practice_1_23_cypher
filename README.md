@@ -10,19 +10,19 @@ To use square code the spaces and punctuation are removed from the English text 
 
 ## *Tests*
  
+**Describe: `cypher()`**   
 #### Test 1:
-Describe: `cypher()`   
-**Test:** *Behavior 1*   
-**Expect:** *cypher(?).toEqual(?)* 
+**Test:** *takes input and display output lowercased with no punctuation*   
+**Expect:** *cypher(Hi tHeR,e!).toEqual(hithere)* 
 #### Test 2:   
-**Test:** *Behavior 2*   
-**Expect:** *cypher(?).toEqual(?)* 
+**Test:** *calculate length of a string and find closest next square root of it*   
+**Expect:** *cypher(Hi there!).toEqual(7, 3)* 
 #### Test 3:   
-**Test:** *Behavior 3*   
-**Expect:** *cypher(?).toEqual(?)*   
+**Test:** *shift characters for a number we found*   
+**Expect:** *cypher(Hi there!, i).toEqual(e)*   
 #### Test 4:   
-**Test:** *Behavior 4*   
-**Expect:** *cypher(?).toEqual(?)* 
+**Test:** *edge case: reach end of row/string on shift - go to the first charachter of the original string*   
+**Expect:** *cypher(Hi there, r).toEqual(i)* 
 
 ## *Setup instructions:*
 Clone repository by using this [URL](https://github.com/DanielAdeyemi/Epicodus_practice_1_23_cypher.git) and run the ***index.html*** file in your terminal.
