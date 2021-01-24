@@ -21,8 +21,8 @@ To use square code the spaces and punctuation are removed from the English text 
 **Test:** *shift characters for a number we found*   
 **Expect:** *cypher(Hi there!, i).toEqual(e)*   
 #### Test 4:   
-**Test:** *edge case: reach end of row/string on shift - go to the first charachter of the original string*   
-**Expect:** *cypher(Hi there, r).toEqual(i)* 
+**Test:** *return string to the user separated after every 5th character*   
+**Expect:** *cypher(Hi there, r).toEqual(hheie tr)* 
 
 ## *Setup instructions:*
 Clone repository by using this [URL](https://github.com/DanielAdeyemi/Epicodus_practice_1_23_cypher.git) and run the ***index.html*** file in your terminal.

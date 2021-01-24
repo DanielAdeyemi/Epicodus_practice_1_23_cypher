@@ -11,7 +11,7 @@ function cypher(input) {
     }
   }
   array = array.join('');
-  array = array.replace(/(\w{5})/g, '$1 ').replace(/(^\s+|\s+$)/, '');
+  array = array.replace(/(\w{5})/g, '$1 ').replace(/(^\s+|\s+$)/, ''); //will put white space after each 5th character
   return array;
 }
 
@@ -20,7 +20,7 @@ $(document).ready(function() {
     event.preventDefault();
     let user = $('#input').val().toLowerCase();
     user = cypher(user);
-    alert(user);
+    $('.output').text(user);
 
   });
 });
